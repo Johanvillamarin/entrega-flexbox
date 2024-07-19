@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  font-size: 12px;
+  height: 70px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  min-width: 250px;
+  max-width: 1000px;
+  align-items: center;
+  text-wrap: wrap;
+}
+header > nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.198);
+  padding: 10px;
+}
+a {
+  font-weight: 800;
+  text-decoration: none;
+}
+.menu {
+  display: none;
+}
+#servicios {
+  display: flex;
+  background-color: rgba(245, 245, 220, 0.642);
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px;
+  max-width: 1150px;
+  min-width: 300px;
+}
+.comidas {
+  width: 35%;
+  min-width: 300px;
+  max-width: 1150px;
+  flex-wrap: wrap;
+}
+#servicios > img {
+  margin-top: 30px;
+  min-width: 250px;
+  max-width: 1000px;
+}
+.comidas > h1 {
+  min-width: 300px;
+  max-width: 1150px;
+  font-size: 30px;
+  font-style: oblique;
+  flex-wrap: wrap;
+}
+.comidas > p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-style: italic;
+  min-width: 300px;
+  max-width: 1150px;
+  flex-wrap: wrap;
+}
+.buttons {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+button {
+  border-radius: 80%;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: 80px;
+  justify-content: space-around;
+  max-width: 1150px;
+  min-width: 100px;
+  flex-wrap: wrap;
+  font-size: 10px;
+  width: 100%;
+}
+.buttons > button:nth-child(odd) {
+  color: rgba(83, 179, 38, 0.756);
+  border: 1px;
+}
+.buttons > button:nth-child(even) {
+  color: rgba(83, 179, 38, 0.756);
+  border: 1px;
+}
+.informacion {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  color: rgba(21, 0, 255, 0.406);
+  min-width: 300px;
+  max-width: 1150px;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 60px;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: row;
+  background-color: rgba(250, 215, 222, 0.426);
+  min-width: 300px;
+  max-width: 1150px;
+}
+ul > li {
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+ul > li > img {
+  width: 50%;
+  height: 80%;
+  min-width: 300px;
+  max-width: 1150px;
+  flex-wrap: wrap;
+}
+.slogan {
+  margin-top: 10px;
+  font-style: italic;
+  min-width: 300px;
+  max-width: 1150px;
+  color: rgba(0, 128, 247, 0.554);
+}
+.acciones {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-around;
+  min-width: 300px;
+  max-width: 1150px;
+}
+button {
+  border-radius: 50px;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: 10px;
+  justify-content: center;
+}
+.acciones > button:nth-child(odd) {
+  color: coral;
+  border: 2px;
+}
+.acciones > button:nth-child(even) {
+  color: coral;
+  border: 2px;
+}
+@media (max-width: 450px) {
+  header > nav {
+    display: none;
+  }
+  .menu {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .comidas > h1 {
+    font-size: 25px;
+  }
+  .comidas {
+    width: 100%;
+    min-width: 0px;
+  }
+}
